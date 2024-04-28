@@ -30,6 +30,10 @@
       .plist{
         margin-bottom: 0.5rem;
       }
+
+      .card-img-top{
+        height: 150px;
+      }
       .py-5 {
         padding-top: 0.5rem !important;
       }
@@ -117,55 +121,122 @@
       <symbol id="linkedin" viewBox="0 0 16 16">
         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
       </symbol>
+      <symbol id="github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+      </symbol>
     </svg>
 <main>
   <!-- <h1 class="visually-hidden">Headers examples</h1> -->
   <div class="container">
     <header class="d-flex justify-content-center py-3">
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> -->
+      </button>
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">About</a></li>
         <li class="nav-item"><a href="publications.html" class="nav-link ">Publications</a></li>
         <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Reach Out</a></li>
+        <!-- <li class="nav-item"><a href="#" class="nav-link">Reach Out</a></li> -->
       </ul>
     </header>
     <hr>
   </div>
   <div class="container col-xxl-8 px-4 py-5">
+    <div><h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">List Of Projects</h3></div>
     <div class="row align-items-center g-5 py-5">
-      <div><h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">List Of Publications</h3></div>
-      <div class="col-lg-12">
-        <div class="bg-body-tertiary p-3 plist rounded-2">
-          <h4>Drought Forecast (Ph.D. Research)</h4>
-          <p>Forecasting vegetation conditions with satellite Earth Observation datasets using Bayesian/Hierarchical Bayesian Models</p>
+
+      <div class="col-md-6">
+        <div class="card" style="width: 100%; height: 35rem;">
+          <img src="./assets/img/drought-holder.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Drought Forecast In Pastoral Communities</h5>
+            <hr>
+            <p class="card-text">Forecasting vegetation conditions with satellite Earth Observation datasets using Bayesian/Hierarchical Bayesian Models. 
+              This project, which was my PhD research work, was aimed at using MODIS and precipitation satellite data to monitor vegetation dynamics, 
+              predict the onset of vegetation stress and forecast the Vegetation Condition Index (VCI), an agricultural drought indicator over 
+              grasslands that serve as grazing fields for livestock farmers. One of the models from this work has been implemented in decision support tools in Kenya, 
+              and forecasts from the model are currently used by institutions like the Kenya Rangeland Trust and Kenya Red Cross for monitoring short-term drought forecasts for early action.</p>
+          </p>
+            <a href="#" class="btn btn-outline-light"><svg class="bi" width="22" height="22"><use xlink:href="#github"/></svg> Git Repo</a>
+          </div>
         </div>
+       </div>
+
+       <div class="col-md-6">
+        <div class="card" style="width: 100%; height: 35rem;">
+          <img src="./assets/img/peatlands.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Estimating Peatland CO2 Exchange</h5>
+            <hr>
+            <p class="card-text">Using a combination of CO2 exchange data from a flux tower and high-resolution satellite earth observation data, 
+              a model was calibrated to estimate Gross Primary Production (GPP) and Ecosystem Respiration (ER) over peatlands 
+              (Bogs) at a spatial scale. This project aimed to monitor restored peatland sites that were previously CO2 sources. 
+              Continuous monitoring of the peatland sites with satellite-derived indices will enable us to determine if the restored peatland, 
+              known to capture and store CO2, has reverted to its natural state (CO2 sinks).</p>
+
+              <a href="#" class="btn btn-outline-light"><svg class="bi" width="22" height="22"><use xlink:href="#github"/></svg> Git Repo</a>
+          </div>
+        </div>
+       </div>
+
+       <div class="col-md-6">
+        <div class="card" style="width: 100%; height: 35rem;">
+          <img src="./assets/img/flood-holder.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Flood Mapping Services</h5>
+            <hr>
+            <p class="card-text">Development and implementation of models and processing chains for mapping and reporting flood extents when flood alerts are 
+              triggered in parts of Scotland.</p>
+            <a href="#" class="btn btn-outline-light"><svg class="bi" width="22" height="22"><use xlink:href="#github"/></svg> Git Repo</a>
+          </div>
+        </div>
+       </div>
+
+       <div class="col-md-6">
+        <div class="card" style="width: 100%; height: 35rem;">
+          <img src="./assets/img/banana-holder.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mapping Banana Plantations</h5>
+            <hr>
+            <p class="card-text">Using Sentinel 1 (SAR) and Sentinel 2 (Optical) remote sensing data, advanced machine learning models were trained to classify and map banana plantations over Costa Rica. 
+              The objective was to map out all plantations to enable near real-time monitoring of banana plants for disease or nutrient deficiency.</p>
+
+              <a href="#" class="btn btn-outline-light"><svg class="bi" width="22" height="22"><use xlink:href="#github"/></svg> Git Repo</a>
+          </div>
+        </div>
+       </div>
+
+       <div class="col-md-6">
+        <div class="card" style="width: 100%; height: 40rem;">
+          <img src="./assets/img/card-holder.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Remote Sensing for Water Quality</h5>
+            <hr>
+            <p class="card-text">Developed remote sensing data pipelines and processing chains to estimate water quality products (Chlorophyll-a) using Sentinel 2 and Sentinel 3 image data. The main goal of this project was to produce weekly maps to monitor Cyano-Bacteria Blooms in in-land lakes.</p>
+            <a href="#" class="btn btn-outline-light"><svg class="bi" width="22" height="22"><use xlink:href="#github"/></svg> Git Repo</a>
+          </div>
+        </div>
+       </div>
+
+
+       <div class="col-md-6">
+        <div class="card" style="width: 100%; height: 40rem;">
+          <img src="./assets/img/tree-map.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Urban Tree Mapping</h5>
+            <hr>
+            <p class="card-text">Develop deep learning (computer vision) models for identifying trees in urban areas in Stirling, Scotland. 
+              A Region-Based Convolutional Neural Network (R-CNN) based on a Retina-Net architecture was trained and fine- tuned using very high-resolution aerial image data. 
+              The aim here was to identify and quantify trees in urban areas. For densely wooded areas and tree clumps, a semantic segmentation deep learning model based on the 
+              U- net architecture was also trained to mask and approximate the number of trees in dense woodlands.</p>
+              
+              <a href="#" class="btn btn-outline-light"><svg class="bi" width="22" height="22"><use xlink:href="#github"/></svg> Git Repo</a>
+          </div>
+        </div>
+       </div>
+
       
-        <div class="bg-body-tertiary p-3 plist rounded-2">
-          <h4>Estimating Peatland CO2 Exchange with Remoting Sensing Data</h4>
-          <p>Using a combination of CO2 exchange data from flux tower and high-resolution satellite earth observation data (Sentinel 2, MODIS) to estimate Gross Primary Production (GPP) and Ecosystem Respiration (ER) over peatlands (Bogs) at a spatial scale</p>
-        </div>
-        
-
-        <div class="bg-body-tertiary p-3 plist rounded-2">
-          <h4>Flood Mapping Services</h4>
-          <p>Assisted with the development and implementation of models and processing chains for mapping and reporting flood extents when flood alerts are triggered in parts of Scotland.</p>
-        </div>
-
-
-        <div class="bg-body-tertiary p-3 plist rounded-2">
-          <h4>Mapping Banana Plantations</h4>
-          <p>Developed banana plantation maps over Costa Rica using advanced machine learning tools with Sentinel 1 (SAR) and 2 (Optical) remote sensing. </p>
-        </div>
-
-
-        <div class="bg-body-tertiary p-3 plist rounded-2">
-          <h4>Remote Sensing for Water Quality</h4>
-          <p>Developing remote sensing data pipelines and processing chains for estimation of water quality products using Sentinel 2 and Plant Lab data</p>
-        </div>
-      </div>
-    </div>
-</div>
-  
+     
   <!-- <div class="divider"></div> -->
   <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -181,7 +252,7 @@
   </footer>
   </div>
 </main>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
