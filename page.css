@@ -13,3 +13,13 @@
 .dropdown-toggle:not(:focus) {
   outline: 0;
 }
+
+.my-hr, .home-blocks{
+  margin-top: 5px;
+}
+
+.page-heads{
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
